@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>二维码识别结果</title>
+  <link rel="stylesheet" href="result.css">
+  <script defer src="result.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="heading"><div class="mark" aria-hidden="true">▦</div><div><p class="eyebrow">QRCoder</p><h1>识别结果</h1></div></header>
+    <section class="card" aria-labelledby="result-title">
+      <div class="card-heading"><h2 id="result-title">正在读取结果</h2><span id="badge" class="badge" hidden></span></div>
+      <p id="description" class="description" role="status">请稍候…</p>
+      <pre id="result" class="result" tabindex="0" hidden></pre>
+      <div class="actions"><button id="copy" type="button" hidden>复制内容</button><button id="open" class="secondary" type="button" hidden>在新标签页打开</button></div>
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+    </section>
+    <p class="footer">内容仅在本地识别，打开链接前请确认来源可信。</p>
+  </main>
+</body>
+</html>
